@@ -1,11 +1,17 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import Header from './Header';
 import './App.css';
+import Content from './Content';
 
 function App() {
-    const [count, setCount] = useState(0);
-
-    return <div className="App"></div>;
+    return (
+        <div className=" bg-slate-50 ">
+            <div className="max-w-5xl space-y-3 mx-auto">
+                <Header />
+                <Content />
+                {/* footer */}
+            </div>
+        </div>
+    );
 }
 
 export default App;

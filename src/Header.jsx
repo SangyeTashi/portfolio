@@ -1,15 +1,16 @@
 import React from 'react';
 import { Twitter, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
+import MenuItem from './MenuItem';
 
 function Header() {
     return (
         <div className="flex px-5 py-3 items-center sticky top-0 z-10">
             <div>
                 <ul className="flex space-x-3">
-                    <li>Portfolios</li>
-                    <li>Skills</li>
-                    <li>Education</li>
-                    <li>About Me</li>
+                    <MenuItem text="Home" />
+                    <MenuItem text="Projects" />
+                    <MenuItem text="Skills" />
+                    <MenuItem text="Contact" />
                 </ul>
             </div>
             <div className="ml-auto flex items-center space-x-3">

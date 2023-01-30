@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 function Content() {
     return (
         <section className="flex relative flex-col justify-center px-5 min-h-screen backdrop-blur-xl snap-center perspective">
-            <h1 className="text-neon-blue text-3xl font-bold">
+            <h1 className="text-neon-blue text-5xl font-bold">
                 Hi, I am{' '}
                 <TypeIt
                     options={{

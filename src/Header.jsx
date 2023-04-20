@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 
 function Header() {
     return (
-        <div className="flex px-5 py-3 items-center sticky top-0 z-10">
+        <div className="flex flex-col justify-center px-5 py-3 items-center sticky top-2 space-y-3 z-10">
             <ul className="flex space-x-6 xl:space-x-8">
                 <MenuItem text="Home" />
                 <MenuItem text="Projects" />
@@ -12,19 +12,19 @@ function Header() {
                 <MenuItem text="Contact" />
             </ul>
 
-            <div className="ml-auto flex items-center space-x-3">
-                <div className="hidden lg:inline-flex space-x-2">
+            <div className=" flex items-center space-x-3">
+                <div className=" space-x-2">
                     <Twitter />
                     <GitHub />
                     <Instagram />
                     <LinkedIn />
                 </div>
-                <img
-                    className="  h-8 rounded-full"
-                    src="https://picsum.photos/200"
-                    alt="profile-photo"
-                />
             </div>
+            <img
+                className=" h-10 rounded-full"
+                src="https://picsum.photos/200"
+                alt="profile-photo"
+            />
         </div>
     );
 }

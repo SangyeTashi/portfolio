@@ -33,9 +33,6 @@ function Content() {
                     ></TypeIt>
                 </motion.div>
             </h1>
-            <h2 className="text-neon-pink font-medium">
-                A Frontend React Developer
-            </h2>
             <motion.p
                 className="max-w-xl"
                 initial={{ y: 400, opacity: 0 }}
@@ -49,10 +46,16 @@ function Content() {
                 }}
                 exit={{ opacity: 0 }}
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                suscipit numquam laborum quaerat eius quis, molestias quisquam,
-                reiciendis nemo aut temporibus ipsa dolores repudiandae
-                perferendis laboriosam possimus quo laudantium fugit.
+                I'm a self-taught front-end web developer. I am currently
+                attending Bengaluru University to get my bachelor's in computer
+                applications. As a web designer and developer, I'm passionate
+                about creating aesthetically pleasing and user-friendly
+                websites. I am knowledgeable with a variety of web development
+                frameworks, HTML, CSS, and JavaScript. As a self-taught
+                developer, I have finished a number of projects that highlight
+                my qualifications. This website serves as a platform for me to
+                highlight my work and show off my skills and experience in web
+                development.
             </motion.p>
         </section>
     );

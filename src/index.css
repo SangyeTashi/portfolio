@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-snap-type: y mandatory;
-    transition: all 2s;
+@layer base {
+    body {
+        @apply bg-primary;
+        @apply text-white;
+    }
 }

@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 
 function Header() {
     return (
-        <div className="flex flex-col justify-center px-5 py-3 items-center sticky top-2 space-y-3 z-10">
+        <div className="flex flex-col justify-center px-5 py-8 items-center fixed w-full backdrop-blur-lg space-y-3 z-10">
             <ul className="flex space-x-6 xl:space-x-8">
                 <MenuItem text="Home" />
                 <MenuItem text="Projects" />

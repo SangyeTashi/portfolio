@@ -3,9 +3,8 @@ import { motion } from 'framer-motion';
 function MenuItem({ text }) {
     return (
         <motion.div
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            className="cursor-pointer  rounded-md py-0.5 px-1"
+            className="cursor-pointer  rounded-md py-0.5 px-2 hover:text-neon-yellow font-medium text-lg"
+            onHoverStart={{}}
         >
             {text}
         </motion.div>

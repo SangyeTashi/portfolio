@@ -1,5 +1,6 @@
 import Header from './Header';
 import './App.css';
+import Projects from './Projects';
 import Content from './Content';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
                 <Header />
 
                 <Content />
-                <Content />
+                <Projects />
             </div>
         </div>
     );

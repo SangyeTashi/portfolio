@@ -1,0 +1,48 @@
+#project-card {
+    position: relative;
+    z-index: 100;
+}
+#project-card::before {
+    transition: all 0.3s ease-in-out;
+    content: '';
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F08%2FNature-Landscape-1080-x-1920-Wallpaper-Vertical.jpg&f=1&nofb=1&ipt=9b3ebb7a510ae10f68cf3a47842d7e44dc8912116e53e631fa3460168b48a825&ipo=images');
+    background-size: cover;
+
+    z-index: -1;
+}
+
+#project-card:hover::before {
+    top: -20px;
+}
+#project-card-content {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    );
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+    transform: translateY(80%);
+    padding: 4rem 1rem;
+}
+#project-card-content p {
+    color: transparent;
+}
+
+#project-card:hover #project-card-content {
+    transform: translateY(0);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.732),
+        rgba(0, 0, 0, 0.282)
+    );
+}
+#project-card:hover p {
+    color: white;
+}
